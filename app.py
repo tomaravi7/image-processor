@@ -8,7 +8,7 @@ import shutil
 
 app = Flask(__name__)
 
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'webp'}
 UPLOAD_FOLDER = 'static/uploads'
 
 if not os.path.exists(UPLOAD_FOLDER):
@@ -65,7 +65,7 @@ def upload_file():
             return jsonify({'status': 'error', 'message': 'No selected file'}), 400
         
         if not allowed_file(file.filename):
-            return jsonify({'status': 'error', 'message': 'Invalid file type. Allowed types are PNG, JPG, JPEG'}), 400
+            return jsonify({'status': 'error', 'message': 'Invalid file type. Allowed types are PNG, JPG, JPEG, WEBP'}), 400
         
         try:
             input_image = Image.open(file.stream)
