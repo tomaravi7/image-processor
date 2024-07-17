@@ -24,3 +24,8 @@ A web application built with Flask that allows users to remove backgrounds from 
 3. Choose the desired action (remove background or convert format) and select the target format if converting.
 4. Click "Process Image" to upload and process your image.
 5. Download the processed image from the link provided.
+
+## UI
+![Screenshot 2024-07-17 220417](https://github.com/user-attachments/assets/34e9cafb-db9b-4a92-a5c3-8424dd31c412)
+![Screenshot 2024-07-17 220408](https://github.com/user-attachments/assets/7911aa96-0267-4eac-8487-e130e911ba3d)
+![Screenshot 2024-07-17 220329](https://github.com/user-attachments/assets/091deffa-0947-48fc-9296-ded37f8a6047)
