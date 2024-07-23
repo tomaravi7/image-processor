@@ -15,11 +15,11 @@ A web application built with Flask that allows users to remove backgrounds from 
     docker build -t imgprocessor:1.0 .
     ```
 3.  ```bash
-    docker run -p 5100:5100 imgprocessor:1.0
+    docker run -p 80:5100 imgprocessor:1.0
     ```
 
 ## Usage
-1. Navigate to `http://localhost:5100` in your web browser.
+1. Navigate to `http://localhost:80` in your web browser.
 2. Drag and drop an image or click to select a file.
 3. Choose the desired action (remove background or convert format) and select the target format if converting.
 4. Click "Process Image" to upload and process your image.
